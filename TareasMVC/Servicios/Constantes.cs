@@ -1,0 +1,18 @@
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace TareasMVC.Servicios
+{
+    public class Constantes
+    {
+        public const string RolAdmin = "admin";
+        public const string RolLider = "lider";
+        public const string RolAuditor = "auditor";
+        public const string RolMaster = "master";
+
+        public static readonly SelectListItem[] CulturasUISoportadas = new SelectListItem[]
+        {
+            new SelectListItem{Value = "es", Text = "Español"},
+            new SelectListItem{Value = "en", Text = "English"}
+        };
+    }
+}
